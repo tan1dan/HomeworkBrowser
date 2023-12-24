@@ -16,16 +16,17 @@ protocol TargetViewDelegate: AnyObject{
 
 class TargetView: UIView {
     
-    let buttonBack = UIButton()
-    let buttonForward = UIButton()
+    let buttonBack = UIButton(type: .system)
+    let buttonForward = UIButton(type: .system)
     let searchField = UITextField()
-    let buttonSearch = UIButton()
-    let buttonRestart = UIButton()
+    let buttonSearch = UIButton(type: .system)
+    let buttonRestart = UIButton(type: .system)
     weak var delegate: TargetViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setConstraint()
+        buttonStartParameters()
     }
     
     
@@ -65,7 +66,7 @@ class TargetView: UIView {
             
             
             buttonSearch.leadingAnchor.constraint(equalTo: searchField.trailingAnchor, constant: 10),
-            buttonSearch.trailingAnchor.constraint(equalTo: buttonRestart.leadingAnchor, constant: 5),
+            buttonSearch.trailingAnchor.constraint(equalTo: buttonRestart.leadingAnchor, constant: -5),
             buttonSearch.topAnchor.constraint(equalTo: topAnchor),
             buttonSearch.bottomAnchor.constraint(equalTo: bottomAnchor),
             buttonSearch.heightAnchor.constraint(equalTo: buttonSearch.widthAnchor, multiplier: 1),

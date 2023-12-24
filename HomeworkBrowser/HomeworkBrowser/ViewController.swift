@@ -22,30 +22,32 @@ class ViewController: UIViewController, TargetViewDelegate {
         
         NSLayoutConstraint.activate([
             targetView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            targetView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 10),
-            targetView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -10),
-            targetView.bottomAnchor.constraint(equalTo: webView.topAnchor, constant: 5),
+            targetView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            targetView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            targetView.bottomAnchor.constraint(equalTo: webView.topAnchor, constant: -5),
+            targetView.heightAnchor.constraint(equalToConstant: 30),
             
             webView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             webView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
+        
     }
     
     func buttonBackPressed(_ sender: TargetView) {
-        <#code#>
+        
     }
     
     func buttonForwardPressed(_ sender: TargetView) {
-        <#code#>
+        
     }
     
     func buttonRestartPressed(_ sender: TargetView) {
-        <#code#>
+        
     }
     
     func buttonSearchPressed(_ sender: TargetView) {
-        <#code#>
+        
     }
     
 }
