@@ -30,7 +30,6 @@ class TargetView: UIView {
         textFieldParameters()
     }
     
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -82,20 +81,15 @@ class TargetView: UIView {
     
     func buttonStartParameters(){
         buttonBack.setImage(UIImage(systemName: "chevron.left"), for: .normal)
-        buttonBack.tintColor = .systemGray
+        buttonBack.tintColor = .systemBlue
         buttonBack.addTarget(self, action: #selector(buttonBackTapped), for: .touchDown)
-        if buttonBack.tintColor == .systemGray {
-            buttonBack.isEnabled = false
-        }
-        buttonBack.contentMode = .scaleAspectFit
+        buttonBack.isEnabled = false
         
         
         buttonForward.setImage(UIImage(systemName: "chevron.right"), for: .normal)
-        buttonForward.tintColor = .systemGray
+        buttonForward.tintColor = .systemBlue
         buttonForward.addTarget(self, action: #selector(buttonForwardTapped), for: .touchUpInside)
-        if buttonForward.tintColor == .systemGray {
-            buttonForward.isEnabled = false
-        }
+        buttonForward.isEnabled = false
         
         
         buttonRestart.setImage(UIImage(systemName: "arrow.counterclockwise"), for: .normal)
