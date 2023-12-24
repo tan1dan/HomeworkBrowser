@@ -27,6 +27,7 @@ class TargetView: UIView {
         super.init(frame: frame)
         setConstraint()
         buttonStartParameters()
+        textFieldParameters()
     }
     
     
@@ -87,7 +88,7 @@ class TargetView: UIView {
             buttonBack.isEnabled = false
         }
         buttonBack.contentMode = .scaleAspectFit
-       
+        
         
         buttonForward.setImage(UIImage(systemName: "chevron.right"), for: .normal)
         buttonForward.tintColor = .systemGray
@@ -95,7 +96,7 @@ class TargetView: UIView {
         if buttonForward.tintColor == .systemGray {
             buttonForward.isEnabled = false
         }
-       
+        
         
         buttonRestart.setImage(UIImage(systemName: "arrow.counterclockwise"), for: .normal)
         buttonRestart.tintColor = .systemBlue
@@ -105,6 +106,12 @@ class TargetView: UIView {
         buttonSearch.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
         buttonSearch.tintColor = .systemBlue
         buttonSearch.addTarget(self, action: #selector(buttonSearchTapped), for: .touchUpInside)
+    }
+    
+    func textFieldParameters(){
+        searchField.tintColor = .systemGray
+        searchField.borderStyle = .roundedRect
+        searchField.placeholder = "Search"
     }
         
     @objc func buttonBackTapped(){
