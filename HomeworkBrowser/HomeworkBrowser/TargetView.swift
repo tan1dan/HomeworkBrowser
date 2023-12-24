@@ -80,20 +80,30 @@ class TargetView: UIView {
     }
     
     func buttonStartParameters(){
-        buttonBack.setImage(UIImage(named: "chevron.left"), for: .normal)
-        buttonBack.imageView?.image?.withTintColor(.systemGray)
-        buttonBack.addTarget(self, action: #selector(buttonBackTapped), for: .touchUpInside)
-            
-        buttonForward.setImage(UIImage(named: "chevron.right"), for: .normal)
-        buttonForward.imageView?.image?.withTintColor(.systemGray)
+        buttonBack.setImage(UIImage(systemName: "chevron.left"), for: .normal)
+        buttonBack.tintColor = .systemGray
+        buttonBack.addTarget(self, action: #selector(buttonBackTapped), for: .touchDown)
+        if buttonBack.tintColor == .systemGray {
+            buttonBack.isEnabled = false
+        }
+        buttonBack.contentMode = .scaleAspectFit
+       
+        
+        buttonForward.setImage(UIImage(systemName: "chevron.right"), for: .normal)
+        buttonForward.tintColor = .systemGray
         buttonForward.addTarget(self, action: #selector(buttonForwardTapped), for: .touchUpInside)
-            
-        buttonRestart.setImage(UIImage(named: "arrow.counterclockwise"), for: .normal)
-        buttonRestart.imageView?.image?.withTintColor(.systemBlue)
+        if buttonForward.tintColor == .systemGray {
+            buttonForward.isEnabled = false
+        }
+       
+        
+        buttonRestart.setImage(UIImage(systemName: "arrow.counterclockwise"), for: .normal)
+        buttonRestart.tintColor = .systemBlue
         buttonRestart.addTarget(self, action: #selector(buttonRestartTapped), for: .touchUpInside)
         
-        buttonSearch.setImage(UIImage(named: "magnifyingglass"), for: .normal)
-        buttonSearch.imageView?.image?.withTintColor(.systemBlue)
+        
+        buttonSearch.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
+        buttonSearch.tintColor = .systemBlue
         buttonSearch.addTarget(self, action: #selector(buttonSearchTapped), for: .touchUpInside)
     }
         
