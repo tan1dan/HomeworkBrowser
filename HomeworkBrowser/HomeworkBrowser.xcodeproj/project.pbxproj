@@ -13,6 +13,7 @@
 		F721F8B62B389E7D00652917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F721F8B42B389E7D00652917 /* Main.storyboard */; };
 		F721F8B82B389E8000652917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F721F8B72B389E8000652917 /* Assets.xcassets */; };
 		F721F8BB2B389E8000652917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F721F8B92B389E8000652917 /* LaunchScreen.storyboard */; };
+		F721F8C32B389F9900652917 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721F8C22B389F9900652917 /* TargetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F721F8B72B389E8000652917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F721F8BA2B389E8000652917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F721F8BC2B389E8000652917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F721F8C22B389F9900652917 /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				F721F8B02B389E7D00652917 /* SceneDelegate.swift */,
 				F721F8B22B389E7D00652917 /* ViewController.swift */,
 				F721F8B42B389E7D00652917 /* Main.storyboard */,
+				F721F8C22B389F9900652917 /* TargetView.swift */,
 				F721F8B72B389E8000652917 /* Assets.xcassets */,
 				F721F8B92B389E8000652917 /* LaunchScreen.storyboard */,
 				F721F8BC2B389E8000652917 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F721F8B32B389E7D00652917 /* ViewController.swift in Sources */,
+				F721F8C32B389F9900652917 /* TargetView.swift in Sources */,
 				F721F8AF2B389E7D00652917 /* AppDelegate.swift in Sources */,
 				F721F8B12B389E7D00652917 /* SceneDelegate.swift in Sources */,
 			);
